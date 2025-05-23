@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 1rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 16px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background-repeat: no-repeat;
+}
+.card img {
+  width: 20rem;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+ 
+.music-title,
+.music-author,
+.likes,
+.play,
+.ph {
+  animation: Color 4s linear infinite;
+  -webkit-animation: Color 4s ease-in-out infinite;
+}
+ 
+.footer-card {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-card div {
+  display: flex;
+}
+ 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ 
+@keyframes Color {
+  0% {
+    color: #a0d468;
+  }
+ 
+  20% {
+    color: #4fc1e9;
+  }
+ 
+  40% {
+    color: #ffce54;
+  }
+ 
+  60% {
+    color: #fc6e51;
+  }
+ 
+  80% {
+    color: #ed5565;
+  }
+ 
+  100% {
+    color: #ac92ec;
+  }
+}
+ 
+@-moz-keyframes Color {
+  0% {
+    color: #a0d468;
+  }
+ 
+  20% {
+    color: #4fc1e9;
+  }
+ 
+  40% {
+    color: #ffce54;
+  }
+ 
+  60% {
+    color: #fc6e51;
+  }
+ 
+  80% {
+    color: #ed5565;
+  }
+ 
+  100% {
+    color: #ac92ec;
+  }
+}
+ 
+@-webkit-keyframes Color {
+  0% {
+    color: #a0d468;
+  }
+ 
+  20% {
+    color: #4fc1e9;
+  }
+ 
+  40% {
+    color: #ffce54;
+  }
+ 
+  60% {
+    color: #fc6e51;
+  }
+ 
+  80% {
+    color: #ed5565;
+  }
+ 
+  100% {
+    color: #ac92ec;
+  }
+}
